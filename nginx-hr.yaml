@@ -11,4 +11,4 @@ spec:
   chart:
     git: git@github.com:sureshpalemoni/flux-test.git
     path: charts/nginx
-    ref: nginx
+    ref: main
