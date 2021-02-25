@@ -3,8 +3,6 @@ kind: HelmRelease
 metadata:
   name: nginx-flux
   namespace: default
-  annotations:
-    fluxcd.io/automated: "true"
 spec:
   releaseName: nginx-flux
   targetNamespace: default
