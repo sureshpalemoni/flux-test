@@ -11,4 +11,6 @@ spec:
     path: charts/nginx
     ref: master
   values:
-    tag: 1.19.7-debian-10-r6
+    image:
+      tag: 1.19.7-debian-10-r6
+    replicaCount: 2
