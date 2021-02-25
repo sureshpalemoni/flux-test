@@ -9,4 +9,4 @@ spec:
   chart:
     git: ssh://git@github.com:sureshpalemoni/flux-test.git
     path: charts/nginx
-    ref: main
+    ref: master
