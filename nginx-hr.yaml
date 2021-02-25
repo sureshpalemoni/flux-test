@@ -1,0 +1,14 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: nginx-flux
+  namespace: default
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: nginx-flux
+  targetNamespace: default
+  chart:
+    git: git@github.com:sureshpalemoni/flux-test.git
+    path: charts/nginx
+    ref: nginx
