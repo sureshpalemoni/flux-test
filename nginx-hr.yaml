@@ -9,6 +9,6 @@ spec:
   releaseName: nginx-flux
   targetNamespace: default
   chart:
-    git: git@github.com:sureshpalemoni/flux-test.git
+    git: ssh://git@github.com:sureshpalemoni/flux-test.git
     path: charts/nginx
     ref: main
