@@ -1,5 +1,5 @@
-kind: Pod
 apiVersion: v1
+kind: Pod
 metadata:
   name: {{ include "common.names.fullname" . }}-test
   annotations:
@@ -8,10 +8,7 @@ metadata:
 spec:
   containers:
   - name: nginx-test
-    image: busybox:latest
-    command:
-      - /bin/bash
-      - -ec
-      - /
-        curl nginx-flux.default.svc.cluster.local:80
+    image: yauritux/busybox-curl:latest
+    command: ["/bin/sh"]
+    args: ["-c", "curl nginx-flux.default.svc.cluster.local:80"]
   restartPolicy: Never
