@@ -2,6 +2,7 @@ kind: Pod
 metadata:
   name: {{ include "common.names.fullname" . }}-test
   annotations:
+    helm.sh/hook: post-upgrade
     helm.sh/hook: test
 spec:
   containers:
@@ -11,5 +12,5 @@ spec:
       - /bin/bash
       - -ec
       - /
-        curl nginx-flux:80
+        curl nginx-flux.default.svc.cluster.local:80
   restartPolicy: Never
