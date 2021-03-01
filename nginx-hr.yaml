@@ -17,5 +17,5 @@ spec:
     ref: master
   values:
     image:
-      tag: 1.19.7-debian-10-r7
-    replicaCount: 1
+      tag: 1.19.7-debian-10-r6
+    replicaCount: 2
