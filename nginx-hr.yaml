@@ -9,7 +9,7 @@ spec:
   rollback:
     enable: true
   test:
-    enable: true
+    enable: false
     ignoreFailures: true
   chart:
     git: git@github.com:sureshpalemoni/flux-test.git
