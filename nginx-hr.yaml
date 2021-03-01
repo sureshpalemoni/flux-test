@@ -7,9 +7,9 @@ spec:
   releaseName: nginx-flux
   targetNamespace: default
   rollback:
-    enable: true
+    enable: flase
   test:
-    enable: false
+    enable: true
     ignoreFailures: true
   chart:
     git: git@github.com:sureshpalemoni/flux-test.git
