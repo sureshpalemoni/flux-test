@@ -10,5 +10,5 @@ spec:
   - name: nginx-test
     image: yauritux/busybox-curl:latest
     command: ["/bin/sh"]
-    args: ["-c", "curl nginx-flux.default.svc.cluster.local:80"]
+    args: ["-c", "curl nginx-flux.default.svc.cluster.local:8080"]
   restartPolicy: Never

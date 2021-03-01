@@ -7,15 +7,15 @@ spec:
   releaseName: nginx-flux
   targetNamespace: default
   rollback:
-    enable: flase
+    enable: true
   test:
     enable: true
-    ignoreFailures: true
+    ignoreFailures: false
   chart:
     git: git@github.com:sureshpalemoni/flux-test.git
     path: charts/nginx
     ref: master
   values:
     image:
-      tag: 1.19.7-debian-10-r6
+      tag: 1.19.7-debian-10-r7
     replicaCount: 1
