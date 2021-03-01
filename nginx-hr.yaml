@@ -10,7 +10,7 @@ spec:
     enable: true
   test:
     enable: true
-    ignoreFailures: false
+    ignoreFailures: true
   chart:
     git: git@github.com:sureshpalemoni/flux-test.git
     path: charts/nginx
