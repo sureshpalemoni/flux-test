@@ -1,0 +1,15 @@
+kind: Pod
+metadata:
+  name: {{ include "common.names.fullname" . }}-test
+  annotations:
+    helm.sh/hook: test
+spec:
+  containers:
+  - name: nginx-test
+    image: busybox:latest
+    command:
+      - /bin/bash
+      - -ec
+      - /
+        curl nginx-flux:80
+  restartPolicy: Never
